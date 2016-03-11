@@ -1,0 +1,144 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <base href="/"></base>
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="bower_components/Materialize/dist/css/materialize.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/jquery-bar-rating/dist/themes/fontawesome-stars.css">
+
+    <!-- endbuild -->
+  </head>
+  <body ng-app="microbrewMondayApp">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+
+      <header class="top">
+      <div class='container-fluid'>
+        <div class='row'>
+          <div class='col-xs-8 col-sm-6 col-md-6 col-md-offset-1 col-lg-5'>
+            <h1 class="head">Microbrew Mondays</h1>
+            <img src="images/MBM_3.png" class="title large" alt="Microbrew Mondays"></img>
+          </div>
+          <div class="globalControls input-field col-xs-4 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-3">
+                  <input placeholder=" " id="search" type="text" >
+                  <a ng-href="/login"><i class="material-icons search">search</i></a>
+                  <a class="btn-flat btn-floating btn-small avatar waves-effect waves-light dark-blue"><i class="material-icons">person</i></a> 
+                
+               </div>
+        </div>
+      </div>
+
+         
+        </div>
+      </div>
+      <div class='globalControlsSimple col-xs-3 col-xs-offset-0'>
+        <i class="material-icons">more_vert</i>
+        <a ng-href="/login"><i class="material-icons">search</i> </a>       
+      </div>
+
+      <nav>
+      <div class='container-fluid'>
+        <div class='row'>
+          <div class='col-xs-12 col-sm-12 col-md-6 col-md-offset-1 col-lg-5 col-lg-offset-2'>
+            <ul class='nav navbar-nav'>
+              <li class='breweryNav active'><a ng-href="/">BREWERIES</a></li>
+              <li class='beersNav'><a ng-href="/beers">BEERS</a></li>
+              <li class='reviewsNav'><a ng-href="/reviews">MY REVIEWS</a></li>
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+    </header>
+
+     
+
+    <div class='container-fluid'>
+
+      <div class='row content'>
+
+         <div class='col-sm-12 col-md-5 col-md-offset-1 col-xs-12 col-xs-offset-0 col-lg-4 col-lg-offset-2 leftPanel'>
+
+          <div ng-view=""></div>
+
+        </div>
+    </div>
+
+
+    <div class="footer">
+      <div class="container">
+      
+      </div>
+    </div>
+
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js({.tmp,app}) scripts/scripts.js -->
+        <script src="scripts/app.js"></script>
+        <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/beers.js"></script>
+        <script src="scripts/controllers/reviews.js"></script>
+        <script src="scripts/scripts.js"></script>
+        <script src="scripts/controllers/brewery.js"></script>
+        <script src="scripts/controllers/beer.js"></script>
+        <script src="scripts/controllers/review.js"></script>
+        <script src="scripts/controllers/newbrewery.js"></script>
+        <script src="scripts/controllers/editbrewery.js"></script>
+        <script src="scripts/controllers/newreview.js"></script>
+        <script src="scripts/controllers/login.js"></script>
+
+        <script src="bower_components/jquery-bar-rating/dist/jquery.barrating.min.js"></script>
+        <script type="text/javascript">
+           $(function() {
+              $('#example').barrating({
+                theme: 'fontawesome-stars'
+              });
+           });
+        </script>
+        <!-- endbuild -->
+</body>
+</html>
