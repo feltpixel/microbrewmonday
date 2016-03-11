@@ -1,0 +1,41 @@
+<div class='editBrewery form'>
+
+		<h2>Please edit and drive safely</h2>
+
+	<form name="editBrewery" method="post" action="/editbrewery">
+
+		<div class='card brewery'>
+			<div class="row">
+				<div class="input-field col s12">
+					<input placeholder="Brewery Name" name="breweryName" type="text" class="validate">
+					<label for="breweryName"> </label>
+				</div>
+			</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input placeholder="Street Address" name="address" type="text" class="validate">
+				<label for="address"></label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input placeholder="City" name="city" type="text" class="validate">
+				<label for="city"></label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<div>Last visited:</div>
+				<input placeholder="Last Visited" name="lastVisited" type="date" class="datepicker">
+				<label for="lastVisited"></label>
+			</div>
+		</div>
+	</div>
+							
+		<input type="cancel" class="btn secondary cancel" value="Cancel" ng-click="cancel()">
+		<input type="submit" class="btn primary done" value="Save">
+	</div>
+</form>
+	
+</div>
+
