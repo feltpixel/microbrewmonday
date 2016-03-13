@@ -36,5 +36,4 @@
     "type" : "git",
     "url" : "https://github.com/feltpixel/microbrewmonday"
   }
-  // "scripts" : { "start" : "node scripts/app.js" } 
 }
