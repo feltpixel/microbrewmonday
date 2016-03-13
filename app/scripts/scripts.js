@@ -54,4 +54,3 @@ $('nav li').on('click', function(){
 	  source: substringMatcher(styles)
 	});
 
-});
