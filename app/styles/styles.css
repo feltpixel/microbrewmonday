@@ -180,6 +180,12 @@ footer {
 	margin-right: 1em;
 	float: right;
 }
+
+.globalControlsSimple {
+	z-index: 929292;
+}
+
+
 .globalControlsSimple i {
 	padding-left: 0em;
 	float: right;
@@ -387,7 +393,7 @@ section {
 /*	box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.10);
 
 */	margin: .5em 5% 0em 5%;
-	width: 100%;
+/*	width: 100%;*/
 	padding: .5em 0;
 }
 
@@ -968,6 +974,13 @@ div[class^="row"]{padding-left:0px; padding-right:0px;}
 
 	.btn-floating.btn-large.bottom {
 	    right: 10%;
+	}
+
+	.globalControls {
+		display: none;
+	}
+	.globalControlsSimple {
+		display: block;
 	}
 
 /*	.globalControls {display: none;}
