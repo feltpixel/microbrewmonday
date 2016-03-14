@@ -39,8 +39,8 @@
           </div>
           <div class="globalControls input-field col-xs-4 col-sm-4 col-sm-offset-2 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-3">
                   <input placeholder=" " id="search" type="text" >
-                  <a ng-href="/login"><i class="material-icons search">search</i></a>
-                  <a class="btn-flat btn-floating btn-small avatar waves-effect waves-light dark-blue"><i class="material-icons">person</i></a> 
+                  <a ng-href="/search"><i class="material-icons search">search</i></a>
+                  <a ng-href="/login"><a class="btn-flat btn-floating btn-small avatar waves-effect waves-light dark-blue"><i class="material-icons">person</i></a> 
                 
                </div>
         </div>
@@ -50,8 +50,8 @@
         </div>
       </div>
       <div class='globalControlsSimple col-xs-3 col-xs-offset-0'>
-        <i class="material-icons">more_vert</i>
-        <a ng-href="/login"><i class="material-icons">search</i> </a>       
+        <a ng-href="/login"><i class="material-icons">more_vert</i></a>
+        <a ng-href="/search"><i class="material-icons">search</i> </a>       
       </div>
 
       <nav>
@@ -139,6 +139,7 @@
               });
            });
         </script>
+        <script src="scripts/controllers/search.js"></script>
         <!-- endbuild -->
 </body>
 </html>

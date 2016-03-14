@@ -6,124 +6,61 @@
 
 		<h3>Beer Name</h3>
 		<div class='info'>
+			<p>Overall rating:</p>
 			<i class="material-icons rating">grade</i>
 			<i class="material-icons rating">grade</i>
 			<i class="material-icons rating">grade</i>
-			<span class="reviewer">by <a href="">johnnyP</a></span>
 			<!-- <a class="btn-floating btn-small avatar btn-flat dark-blue"><i class="material-icons">person</i></a> -->
 		</div>
-		<div class='meta'>Brewery, City</div>
-		<div class='beerStyle'>Beer style</div>
-
-		<a class="btn-floating btn-small dark-blue editBeer" ng-href="/editBeer"><i class="material-icons">person</i></a>
+		<div class='meta'>Beer style</div>
+		<div class='beerStyle'>Brewery, City</div>
 	</div>
 
-		
+		<a href="#" class='rate beer' ng-href="/newReview">Review this Beer</a>
+		<h3 class='list'>Reviews (3)</h3>
 
+<!-- 		<div class='card general'>
+ -->
+			<div class='listView review'>
 
-	<div class='paging'>
+			<div class='item'>
+				<a ng-href="/review">
+					<div class="btn-flat btn-floating btn-small avatar waves-effect waves-light dark-blue review"><i class="material-icons">person</i></div> 	
+					<div class='name'>John Smith</div>
+					<div class='meta'>Beer Name, Brewery</div>
+					<i class="material-icons rating">grade</i>
+					<i class="material-icons rating">grade</i>
+					<i class="material-icons rating">grade</i>
+					<i class="material-icons rating">grade</i>
+					<span class='rating meta'>Jan 15, 2016</span>
+				</a>
+			</div>
 
-		<a href="#!"><i class="material-icons">chevron_left</i></a><span class="count">1 of 1</span><a href="#!"><i class="material-icons">chevron_right</i></a>
-		</div> 
+			<div class='item'>	
+				<a class="btn-flat btn-floating btn-small avatar waves-effect waves-light dark-blue review "><i class="material-icons">person</i></a>
+				<div class='name'>Anne Strickland</div>
+				<div class='meta'>Beer Name, Brewery</div>
+				<i class="material-icons rating">grade</i>
+				<i class="material-icons rating">grade</i>
+				<i class="material-icons rating">grade</i>
+				<span class='rating meta'>Jan 15, 2016</span>
+			</div>
 
-			
-	
+			<div class='item'>	
+				<a class="btn-flat btn-floating btn-small avatar waves-effect waves-light dark-blue review"><i class="material-icons">person</i></a> 
+				<div class='name'>Alex Howe</div>
+				<div class='meta'>Beer Name, Brewery</div>
+				<i class="material-icons rating">grade</i>
+				<i class="material-icons rating">grade</i>
+				<span class='rating meta'>Jan 5, 2016</span>
+			</div>
+		<!-- </div> -->
 
-		<div class='card appearance'>
-		<h3>Appearance &amp; Aroma</h3>
-
-		<div class="group">
-
-			<form action="#" class="color">
-				<div class="form-label">COLOR</div>
-				<div class='colorSelector'></div>
-			    <p class="range-field">
-			      <input type="range" id="color" min="0" max="100"  value='30'/>
-			    </p>
-			    <span class="form-label secondary">STRAW</span>
-				<span class="form-label secondary">GOLD</span>
-				<span class="form-label secondary">AMBER</span>
-				<span class="form-label secondary">COPPER</span>
-				<span class="form-label secondary">DARK BROWN</span>
-				<span class="form-label secondary color last">BLACK</span>
-			</form>
-		
-		</div>
-		
-		<div class="group">
-			<div class="form-label">MALT AROMA</div>
-			<span class="label label-default">Grain</span>
-			<span class="label label-active">Bread</span>
-			<span class="label label-default">Sweet</span>
-			<span class="label label-default">Toast</span>
-			<span class="label label-default">Nut</span>
-			<span class="label label-default">Caramel</span>
-			<span class="label label-default">Toffee</span>
-			<span class="label label-default">Coffee</span>
-			<span class="label label-default">Chocolate</span>
-		</div>
-		
-		<div class="group">
-		<div class="form-label">HOPS AROMA</div>
-			<span class="label label-default">Earth</span>
-			<span class="label label-default">Floral</span>
-			<span class="label label-active">Herbal</span>
-			<span class="label label-default">Spice</span>
-			<span class="label label-default">Resin</span>
-			<span class="label label-default">Citrus</span>
-		</div>
-
-	</div>
-
-	<div class='card taste'>
-		<h3>Taste</h3>
-		<div class="group">
-			<form action="#">
-				<div class="form-label">INTENSITY</div>
-			    <p class="range-field">
-			      <input type="range" id="intensity" min="0" max="100" value='70'/>
-			    </p>
-				<span class="form-label secondary taste">FAINT</span>
-				<span class="form-label secondary last taste">STRONG</span>
-			</form>
-		</div>
-
-		<div class="group">
-			<form action="#">
-				<div class="form-label">BALANCE</div>
-				
-				    <p class="range-field">
-				      <input type="range" id="balance" min="0" max="100" value='40'/>
-				    </p>
-				  
-				<span class="form-label secondary taste">SWEET</span>
-				<span class="form-label secondary last taste">BITTER</span>
-			</form>
-		</div>
-
-	</div>
-
-	<div class='card notes'>
-		<h3>Notes</h3>
-
-		<div class="row">
-		    <form class="col s12">
-		      <div class="row">
-		        <div class="input-field col s12">
-		          <textarea readonly="readonly" value="I love this beer!!" name="notes" class="notes materialize-textarea">I love this beer!</textarea>
-		          <label for="notes"></label>
-		        </div>
-		      </div>
-		    </form>
-		  </div>
-
-	</div>	
-
-	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
+<!-- 	<div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
       <a class="btn-floating btn-large bottom hops-green addReview" ng-href="/newReview">
       <i class="large material-icons">add</i>
       </a>
-    </div>
+    </div> -->
 					
 </div>
 

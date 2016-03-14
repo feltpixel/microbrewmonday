@@ -104,9 +104,9 @@ section.form {
 	width: 70px;
 	max-height: 780px;
 	float: left;
-	margin-right: 2em;
+	margin-right: 1em;
 	margin-top: 0em;
-
+	margin-left: 0em;
 }
 
 div.login p {
@@ -126,6 +126,10 @@ div.input-field .logo {
 	/*max-width: 500px;*/
 }
 
+.listView.review .item { 
+	padding-left: 0;
+}
+
 .paging {
 	float: right;
 	margin: 0em 1em;
@@ -136,7 +140,7 @@ div.input-field .logo {
 	z-index: 999;
 }
 
-.paging i{ 
+.paging i { 
 	padding: 0 .5em;
 	color: #aaa;
 	font-size: 140%;
@@ -204,6 +208,10 @@ footer {
 	background-color: #D35704;
 }
 
+.gold {
+	background-color: #FFB400;
+}
+
 
 /*   Info Panel (right) */
 section {
@@ -216,48 +224,63 @@ section {
 	padding-bottom: 0;
 }
 
+.breweryInfo .info {
+	float: right;
+	margin-top: -3em;
+}
 
 .breweryInfo.header {
 	height: 100px;
 	padding-top: 1em;
-	padding-left: 2em;
-/*	background: #AA4603 url("../images/brewery.jpg") no-repeat top center;
-*/	background-size: 100%;
+	padding-left: 1em;
+	background: #FFB400 url("../images/beer-bubbles40.png") no-repeat top center;
+	background-size: 100%;
 	opacity: 1;
-	background-color: #f9f9ef;
 	background-blend-mode: multiply;
 }
 .beerInfo.header {
 	height: 100px;
 	background-color: #f9f9ef;
 	padding-top: 1em;
-	padding-left: 2em;
-/*	background: #f9f9ef url("../images/hops20.png") no-repeat center center;
-*/	background-size: 100%;
+	padding-left: 1em;
+	background: #849b39 url("../images/hops50.png") no-repeat center center;
+	background-size: 100%;
+	background-blend-mode: multiply;
+	opacity: 1;
+}
+
+.beerInfo.header.review {
+	height: 100px;
+	background-color: #D35704;
+	padding-top: 1em;
+	padding-left: 1em;
+	background: #D35704 url("../images/barley-field60.png") no-repeat center center;
+	background-size: 100%;
 	background-blend-mode: multiply;
 	opacity: 1;
 }
 
 .breweryInfo.header h3, .beerInfo.header h3  {
-	color: #333;
+	color: #fff;
 	font-size: 120%;
-	font-weight: 500;
+	font-weight: 400;
 	margin-bottom: 0em;
 	padding-bottom: 0;
 	line-height: 1.5em;
 }
 
+
 .breweryInfo.header .meta, .beerInfo.header .meta {
-	font-size: 100%;
-	color: rgba(0, 0, 0, 0.6);
+	font-size: 90%;
+	color: rgba(255, 255, 255, 0.7);
 	font-weight: 400;
 	margin-bottom: 0em;
 }
 
 .breweryInfo.header .lastVisited, .beerInfo.header .beerStyle {
-	font-size: 90%;
-	color: rgba(0, 0, 0, 0.8);
-	font-weight: 400;
+	font-size: 80%;
+	color: rgba(255, 255, 255, 0.9);
+	font-weight: 300;
 	margin-top: .5em;
 }
 
@@ -275,9 +298,9 @@ section {
 	font-size: 100%;
 }
 
-.lastVisited {
+/*.lastVisited {
 	opacity: .5;
-}
+}*/
 
 .newBeer, .newBrewery {
 	padding-top: 0em;
@@ -295,13 +318,25 @@ section {
 	width: 90%;
 }
 
+.form .buttons {
+	margin-top: 2em;
+}
 
 .header .info {
 	float: right;
 	position: relative;
-	right: 1em;
+	right: 0em;
 	top: -1.5em;
 	text-align: right;
+}
+
+.header .info .vote {
+	color: rgba(0,0,0, 0.3);
+}
+
+.header .info .vote.active {
+	color: #D35704;
+	text-shadow: 0px 0px 20px rgba(255, 255, 255, .7);
 }
 
 .header .info .btn.avatar {
@@ -418,7 +453,13 @@ section {
 	padding-bottom: .5em;
 }
 
-
+.avatar.review {
+	width: 35px;
+	height: 35px;
+	float: left;
+	margin-right: 1em;
+	margin-top: .2em;
+}
 
 
 h3.list  {
@@ -662,6 +703,16 @@ a.rate {
 	float: right;
 }
 
+ a.rate.beer {
+	top: 1em;
+	font-weight: 400;
+	right: 1em;
+	position: relative;
+	color: #039be5;
+	float: right;
+
+}
+
 a:hover {
 	text-decoration: none;
 	color: rgb(3, 150, 244);
@@ -695,8 +746,15 @@ header .info i.rating {
 	padding-top: 1em;
 }
 
+.info p {
+	color: white;
+	margin-bottom: 0em;
+	font-size: 80%;
+	font-weight: 300;
+}
+
 .listView i.vote.active {
-	color: #2994b2;
+	color: #D35704;
 }
 
 .listView i.vote {
@@ -774,7 +832,7 @@ footer a {
 }
 
 .header .btn-floating.btn-small {
-	margin-top: -1em;
+	margin-top: -.5em;
 	position: absolute;
 	right: 2em;
 }
@@ -785,12 +843,18 @@ footer a {
 }
 
 .info .btn-floating.btn-small.avatar {
-	margin-top: -15px;
 	margin-left: .5em;
+	position: relative;
+	float: right;
+	right: 0;
 }
 
 header .row {
 	margin-bottom: 0;
+}
+
+.info .rating {
+	margin-top: .5em;
 }
 
 
